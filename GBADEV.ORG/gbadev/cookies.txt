@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+gbadev.org	TRUE	/	FALSE	1999999999	PHPSESSID	a9c0ecfbdf64f971a03f09fe6907bcd1
+

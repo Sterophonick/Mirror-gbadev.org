@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from gbadev.org/index.php?showinfo=1467 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 23:04:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<HEAD>
+	<TITLE>Gameboy Advance Development</TITLE>
+	<STYLE TYPE='text/css'>
+		<!--
+		a.menu:link     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited:hover     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a:link          { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited       { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited:hover { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		// -->
+	</STYLE>
+	<LINK HREF='http://rss.gbadev.org/feed.php' REL='alternate' TITLE='GBADEV.ORG RSS' TYPE='application/rss+xml'>
+	<META HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=iso-8859-1'>
+	<META HTTP-EQUIV='Content-Style-Type' CONTENT='text/css'>
+</HEAD>
+
+<BODY BGCOLOR='#FFFFFF' TEXT='#000000'>
+
+<TABLE BORDER='0' CELLSPACING='5' CELLPADDING='0' WIDTH='800'>
+	<TR>
+		<TD WIDTH='160'></TD>
+		<TD ALIGN='CENTER' BGCOLOR='#FFFFFF'><IMG SRC='gbadev.png' WIDTH='600' HEIGHT='54' ALT='logo'></TD>
+		<TD WIDTH='200'></TD>
+	</TR>
+	<TR>
+		<TD VALIGN='TOP' WIDTH='170' BGCOLOR='#FFFFFF'>
+		<TABLE WIDTH='165' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Menu</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+	<FONT FACE='verdana'>
+	<A HREF='index-2.html' CLASS='menu'>Main</A><BR>
+	<A HREF='about.html' CLASS='menu'>About</A><BR>
+	<A HREF='search.html' CLASS='menu'>Search</A><BR>
+	<A HREF='submit.html' CLASS='menu'>Submit News</A><BR>
+	<A HREF='archive.html' CLASS='menu'>News Archive</A><BR>
+	<A HREF='http://forum.gbadev.org/' CLASS='menu'>Forum</A><BR>
+	<A HREF='contact.html' CLASS='menu'>Contact Us</A><BR>
+	<br>
+	<A HREF='tools.html' CLASS='menu'>Tools</A><BR>
+	<A HREF='demos.html' CLASS='menu'>Games/Demos</A><BR>
+	<A HREF='sources.html' CLASS='menu'>Sourcecode</A><BR>
+	<A HREF='docs.html' CLASS='menu'>Documentation</A><BR>
+	<A HREF='hardware.html' CLASS='menu'>Hardware</A><BR>
+	<A HREF='developers.html' CLASS='menu'>Developers</A><BR>
+	</FONT></TD>
+</TR>
+</TABLE></TD>
+		<TD VALIGN='TOP' WIDTH='600' BGCOLOR='#FFFFFF'>
+
+<TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+	<TR>
+		<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+		<FONT FACE='verdana' SIZE='2'><B>higan v104</B></FONT><BR><FONT SIZE='1'>By <A HREF='developersaf46.html?author=530'>byuu</A> [Tuesday September 5th 18:15:53 UTC 2017]</FONT></TD>
+		<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>News : General</B></FONT></TD>
+		<TR>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='index379e.html?showinfo=1467'>Permalink</A></TD>
+		</TR>
+	</TR>
+	<TR>
+		<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+		<FONT FACE='verdana' SIZE='2'><a href="http://byuu.org/emulation/higan/" target="new">higan</a> is a multi-system emulator that began development on 2014-10-14.<br />
+<br />
+<b>It currently supports the following systems:</b><br />
+• Nintendo Famicom<br />
+• Nintendo Super Famicom<br />
+• Nintendo Game Boy<br />
+• Nintendo Game Boy Color<br />
+• Nintendo Game Boy Advance<br />
+• Sega Master System<br />
+• Sega Game Gear<br />
+• Sega Mega Drive<br />
+• NEC PC Engine<br />
+• NEC SuperGrafx<br />
+• Bandai WonderSwan<br />
+• Bandai WonderSwan Color<br />
+<br />
+<b>higan also supports the following Super Famicom subsystems:</b><br />
+• Super Game Boy<br />
+• BS-X Satellaview<br />
+• Sufami Turbo<br />
+<br />
+<b>Minimum System Requirements:</b><br />
+• Intel Core-series processor<br />
+• OpenGL 3.2-capable graphics card<br />
+• Windows XP+, OS X 10.7+, Linux 3.2+ or FreeBSD 10.0+<br />
+<br />
+There are lots of improvements in this new release, both to core emulation and to the user interface. However, some of these changes are quite substantial, so regressions are a possibility. Please report any regressions from v103 on the forums if found.<br />
+<br />
+Note that Mega Drive save RAM files will not be compatible with v103, but will now be compatible with save RAM files from all other Mega Drive emulators, and the format will be stable going forward.<br />
+<br />
+Also!! Thanks to the tireless work of Screwtape, the Help->Documentation link in higan now takes you to a very comprehensive user guide. Please be sure to consult this if you have any questions about using higan.<br />
+<br />
+Lastly, I&#039;ve added a link to my Patreon page (<a href="https://patreon.com/byuu/" target="new">https://patreon.com/byuu/</a>) to the higan downloads page. The money will go exclusively toward purchasing SNES games for preservation, hardware and flash carts for reverse engineering, equipment such as backup drives, etc. Donating is entirely optional and comes with no rewards, but would of course be greatly appreciated! ^^;<br />
+<br />
+<b>Changelog: (2017-08-12)</b><br />
+<i>• nall/dsp: improved first-order IIR filtering<br />
+• Famicom: improved audio filtering (90hz lowpass + 440hz lowpass + 14khz highpass)<br />
+• Game Boy Advance: corrected bug in PSG wave channel emulation [Cydrak]<br />
+• Mega Drive: added first-order 2.84KHz low-pass filter to match VA6 model hardware<br />
+• Mega Drive: lowered PSG volume relative to YM2612 to match VA6 model hardware<br />
+• Mega Drive: Hblank flag is not always set during Vblank<br />
+• Mega Drive: fix PAL mode reporting from control port reads<br />
+• Famicom: improved phase duty cycle emulation (mode 3 is 25% phase inverted; counter decrements)<br />
+• Mega Drive: reset does not cancel 68K bus requests<br />
+• Mega Drive: 68K is not granted bus access on Z80 reset<br />
+• Mega Drive: CTRL port is now read-write, maintains value across controller changes<br />
+• Z80: IX, IY override mode can now be serialized in save states<br />
+• 68K: fixed calculations for ABCD, NBCD, SBCD [hex_usr, SuperMikeMan]<br />
+• SPC700: improved all cycle timings to match results observed by Overload with a logic anaylzer<br />
+• Super Famicom: SMP uses a separate 4x8-bit buffer for $f4-f7; not APU RAM [hex_usr]<br />
+• Super Famicom: SMP TEST register is now finally 100% fully emulated [byuu, AWJ]<br />
+• Game Boy Advance: DMA can run between CPU instruction cycles<br />
+• Game Boy Advance: added 2-cycle delay between DMA activation and transfers<br />
+• higan: improved aspect ratio correction accuracy at higher video scaling sizes<br />
+• higan: overscan masking will now actually crop the underlying video instead of just blanking it<br />
+• Mega Drive: center video when overscan is disabled<br />
+• higan: added increment/decrement quick save slot hotkeys<br />
+• Game Boy Advance: fixed wave RAM nibble ordering (fixes audio in Castlevania, Pocket NES)<br />
+• higan: added new adaptive windowed mode: resizes the window to the current emulated system&#039;s size<br />
+• higan: added new integral scaling mode: resizes the window to fill as much of the screen as possible<br />
+• higan: main window is now resizable and will automatically scale contents based on user settings<br />
+• higan: fixed one-time blinking of the main window on startup caused by focus stealing bug<br />
+• ruby: fixed major memory leak in Direct3D driver<br />
+• ruby: added fullscreen exclusive mode to Direct3D driver<br />
+• Super Famicom: corrected latching behavior of BGnHOFS PPU registers<br />
+• higan: all windows sans the main viewport can be dismissed with the escape key now<br />
+• ruby: complete API rewrite; many audio drivers now support device selection<br />
+• higan: output frequency can now be modified<br />
+• higan: configuration settings split to individual menu options for faster access to individual pages<br />
+• ruby: improved WASAPI driver to event-driven model; more compatible in exclusive mode now<br />
+• libco: fix compilation of sjlj and fiber targets [Screwtape]<br />
+• ruby: added YV12 and I420 support to X-Video driver<br />
+• Game Boy: added TAMA emulation (RTC emulation is not working yet) [thanks to endrift for notes]<br />
+• Game Boy: correct data ordering of MMM01 ROMs (MMM01 ROMs will need to be re-imported into higan)<br />
+• Game Boy: store MBC2 save RAM as 256-bytes instead of 512-bytes (RAM is 4-bit; not 8-bit with padding)<br />
+• Game Boy: fixed a bug with RAM serialization in games without a battery<br />
+• Mega Drive: fix CRAM reads (fixes Sonic Spinball) [hex_usr]<br />
+• Game Boy: added rumble support to MBC5 games such as Pokemon Pinball<br />
+• Game Boy: added MBC7 emulation (accelerometer X-axis, EEPROM not working yet) [thanks to endrift for notes]<br />
+• hiro: macOS compilation fixes and UI improvements [MerryMage, ncbncb]<br />
+• Game Boy: added MBC6 emulation (no phone link or flash support; timing bugs in game still)<br />
+• Game Boy: HDMA syncs to other components after each byte transfer now<br />
+• Game Boy: disabling the LCD completely halts the PPU (fixes onscreen graphical corruption in some games)<br />
+• Mega Drive: added 6-button Fighting Pad emulation [hex_usr]<br />
+• 68K: TAS sets d7 when EA mode is a direct register (fixes Asterix graphical corruption)<br />
+• Game Boy: STAT mode is forced to zero when LCD is disabled (fixes Pokemon Pinball)<br />
+• LR35902: complete rewrite<br />
+• icarus: high-DPI is not supported on Windows yet; remove setting for consistency with higan window sizes<br />
+• hiro: added full support for high-DPI displays on macOS [ncbncb]<br />
+• ARM7TDMI: complete rewrite<br />
+• Super Famicom: disabled channels during HDMA initialization appear to set DoTransfer flag<br />
+• V30MZ: code cleanup<br />
+• Mega Drive: added optional TMSS emulation; disabled by default [hex_usr]<br />
+• ARM7TDMI: pipeline decode stage caches CPSR.T [MerryMage]<br />
+• ARM7TDMI: fixed timing of THUMB stack multiple instruction [Cydrak]<br />
+• higan: detect when ruby drivers crash; disable drivers on next startup to prevent crash loop<br />
+• Mega Drive: added automatic region detection (favors NTSC-J > NTSC-U > PAL) [hex_usr]<br />
+• Mega Drive: support 8-bit SRAM<br />
+• ARM7TDMI: PC should be incremented by 2 when setting CPSR.T via MSR instruction [MerryMage]<br />
+• ruby: add Windows ASIO driver support (does not work on some systems due to buggy vendor drivers)<br />
+• higan: default to safe drivers on a new install; due to instability with some optimal drivers</i><BR></TD>
+	</TR></TABLE><SMALL>&nbsp;</SMALL><BR>
+</TD>
+<TD VALIGN='TOP' WIDTH='190' BGCOLOR='#FFFFFF'>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Games</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/2004Mbit_logo.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosff89.html?showinfo=1271'>2004Mbit Compo Game</A><BR>2. <A HREF='demos8c1f.html?showinfo=434'>Xmen V StreetFighter J Edition</A><BR>3. <A HREF='demosb964.html?showinfo=1279'>Another World GBA v2.1</A><BR>4. <A HREF='demos34fb.html?showinfo=1353'>MarioBreak!</A><BR>5. <A HREF='demos1485.html?showinfo=1354'>FF4 Advance- The Return of Golbez</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Demos</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/SmashBrosAdvance.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosf3bc.html?showinfo=1275'>Smash Bros. Advance</A><BR>2. <A HREF='demos4f79.html?showinfo=472'>Half Life</A><BR>3. <A HREF='demos7150.html?showinfo=1332'>Jespa3D Engine ver 1.39</A><BR>4. <A HREF='demos9e74.html?showinfo=1276'>BulletGBA 5.0</A><BR>5. <A HREF='demos628a.html?showinfo=1329'>Final Fantasy 4th World Cup won by Italy</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Search</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='CENTER' VALIGN='CENTER' BGCOLOR='#CDCDCD'>
+	<FORM METHOD='POST' ACTION='http://gbadev.org/search.php'>
+	<INPUT TYPE='hidden' NAME='search_section' VALUE='All'>
+	<INPUT TYPE='text' NAME='search_input' MAXLENGTH='30' SIZE='14'>
+	<INPUT TYPE='submit' VALUE='Search'></FORM>
+	</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>GBADEV.ORG Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+
+<B>Visitors:</B><BR>
+<B>Days Online:</B> 6784<BR>
+
+<B>Articles:</B> 550<BR><B>Games:</B> 388<BR><B>Demos:</B> 237<BR><B>Tools:</B> 176<BR>
+</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Forum Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+<B>Top Posters:</B><BR>
+
+1. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=180'>tepples</A> (12198)<BR>2. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=146'>sgeos</A> (2421)<BR>3. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=5846'>HyperHacker</A> (2404)<BR>4. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=1120'>sajiimori</A> (2226)<BR>5. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=2686'>keldon</A> (2158)<BR><BR><B>Members:</B> 11811<BR><B>Articles:</B> 175447<BR>
+</FONT></TD>
+</TR>
+</TABLE></TD>
+</TR>
+</TABLE>
+</FONT>
+</BODY>
+
+<!-- Mirrored from gbadev.org/index.php?showinfo=1467 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 23:04:44 GMT -->
+</HTML>

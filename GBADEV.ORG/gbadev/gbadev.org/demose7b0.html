@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from gbadev.org/demos.php?showinfo=1432 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 22:59:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<HEAD>
+	<TITLE>Gameboy Advance Development</TITLE>
+	<STYLE TYPE='text/css'>
+		<!--
+		a.menu:link     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited:hover     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a:link          { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited       { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited:hover { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		// -->
+	</STYLE>
+	<LINK HREF='http://rss.gbadev.org/feed.php' REL='alternate' TITLE='GBADEV.ORG RSS' TYPE='application/rss+xml'>
+	<META HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=iso-8859-1'>
+	<META HTTP-EQUIV='Content-Style-Type' CONTENT='text/css'>
+</HEAD>
+
+<BODY BGCOLOR='#FFFFFF' TEXT='#000000'>
+
+<TABLE BORDER='0' CELLSPACING='5' CELLPADDING='0' WIDTH='800'>
+	<TR>
+		<TD WIDTH='160'></TD>
+		<TD ALIGN='CENTER' BGCOLOR='#FFFFFF'><IMG SRC='gbadev.png' WIDTH='600' HEIGHT='54' ALT='logo'></TD>
+		<TD WIDTH='200'></TD>
+	</TR>
+	<TR>
+		<TD VALIGN='TOP' WIDTH='170' BGCOLOR='#FFFFFF'>
+		<TABLE WIDTH='165' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Menu</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+	<FONT FACE='verdana'>
+	<A HREF='index-2.html' CLASS='menu'>Main</A><BR>
+	<A HREF='about.html' CLASS='menu'>About</A><BR>
+	<A HREF='search.html' CLASS='menu'>Search</A><BR>
+	<A HREF='submit.html' CLASS='menu'>Submit News</A><BR>
+	<A HREF='archive.html' CLASS='menu'>News Archive</A><BR>
+	<A HREF='http://forum.gbadev.org/' CLASS='menu'>Forum</A><BR>
+	<A HREF='contact.html' CLASS='menu'>Contact Us</A><BR>
+	<br>
+	<A HREF='tools.html' CLASS='menu'>Tools</A><BR>
+	<A HREF='demos.html' CLASS='menu'>Games/Demos</A><BR>
+	<A HREF='sources.html' CLASS='menu'>Sourcecode</A><BR>
+	<A HREF='docs.html' CLASS='menu'>Documentation</A><BR>
+	<A HREF='hardware.html' CLASS='menu'>Hardware</A><BR>
+	<A HREF='developers.html' CLASS='menu'>Developers</A><BR>
+	</FONT></TD>
+</TR>
+</TABLE></TD>
+		<TD VALIGN='TOP' WIDTH='600' BGCOLOR='#FFFFFF'>
+		<TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>Games/Demos</B></FONT><BR></TD>
+		</TR>
+		<TR>
+			<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'>
+
+<B>Entombed</B> [Games/Platform]<BR>
+<BR><B>Made by:</B> <A HREF='developers95a5.html?author=533'>pitcrawler</A><BR><B>Released:</B> 2016-01-17<BR><B>Download:</B> <A HREF='EntombedGBA%20%26%20source7976.zip?section=games&amp;ID=1432'>EntombedGBA & source.zip</A><BR><IMG SRC='demos/EntombedGBA%20%26%20source.png'><BR>
+<BR>At long last here&#039;s the release version of a game I&#039;ve been working on for quite a while. Entombed. I first started on it in 2008, and recently went back and finished it.<br />
+<br />
+It&#039;s a faithful remake of an old Atari ST game. It&#039;s a platform puzzler, a little bit like Rick Dangerous but one that requires more thought. <br />
+The game has 5 levels, and you&#039;re able to complete the first 4 in any order you like.<br />
+<br />
+Since the Atari ST screen was bigger than the Gameboy Advance screen, I had to make a few changes:<br />
+<br />
+• I had to shrink the title screen graphics in order to fit them on the screen.<br />
+• I had to have 2 screens for the level selector instead of one.<br />
+• I had to slightly modify some of the in-game text to fit it all on the screen. <br />
+• And most importantly, since you can see less of the level on the GBA screen at any one time, I had to implement a feature to &#039;look down&#039; a bit so you can see what&#039;s below you.<br />
+<br />
+Other than those changes, it&#039;s designed to play almost exactly like the original, except the graphics move a lot more smoothly than the Atari ST version.<br />
+<br />
+I made the game purely from running the original game in a emulator, ripping the graphics and sounds, and designing the levels just from playing through them on the original many times over. I made various assumptions that turned out to be incorrect later on, forcing me to go back and make changes. But I finally got it all working mostly as it should.<br />
+<br />
+<b>Some other things to note:</b><br />
+• It&#039;s written in C++ using devkitARM and the tonc library.<br />
+• The level editor is written in VB.Net.<br />
+• I included instructions for the level editor, how to compile the game, the original game&#039;s instruction manual and a description of the GBA controls.<br />
+<br />
+Checkout this <a href="http://forum.gbadev.org/viewtopic.php?t=18068">forum</a> post, to get the level editor.<BR>
+<BR></TD>
+</TR>
+</TABLE></TD>
+<TD VALIGN='TOP' WIDTH='190' BGCOLOR='#FFFFFF'>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Games</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/2004Mbit_logo.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosff89.html?showinfo=1271'>2004Mbit Compo Game</A><BR>2. <A HREF='demos8c1f.html?showinfo=434'>Xmen V StreetFighter J Edition</A><BR>3. <A HREF='demosb964.html?showinfo=1279'>Another World GBA v2.1</A><BR>4. <A HREF='demos34fb.html?showinfo=1353'>MarioBreak!</A><BR>5. <A HREF='demos1485.html?showinfo=1354'>FF4 Advance- The Return of Golbez</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Demos</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/SmashBrosAdvance.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosf3bc.html?showinfo=1275'>Smash Bros. Advance</A><BR>2. <A HREF='demos4f79.html?showinfo=472'>Half Life</A><BR>3. <A HREF='demos7150.html?showinfo=1332'>Jespa3D Engine ver 1.39</A><BR>4. <A HREF='demos9e74.html?showinfo=1276'>BulletGBA 5.0</A><BR>5. <A HREF='demos628a.html?showinfo=1329'>Final Fantasy 4th World Cup won by Italy</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Search</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='CENTER' VALIGN='CENTER' BGCOLOR='#CDCDCD'>
+	<FORM METHOD='POST' ACTION='http://gbadev.org/search.php'>
+	<INPUT TYPE='hidden' NAME='search_section' VALUE='All'>
+	<INPUT TYPE='text' NAME='search_input' MAXLENGTH='30' SIZE='14'>
+	<INPUT TYPE='submit' VALUE='Search'></FORM>
+	</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>GBADEV.ORG Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+
+<B>Visitors:</B><BR>
+<B>Days Online:</B> 6784<BR>
+
+<B>Articles:</B> 550<BR><B>Games:</B> 388<BR><B>Demos:</B> 237<BR><B>Tools:</B> 176<BR>
+</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Forum Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+<B>Top Posters:</B><BR>
+
+1. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=180'>tepples</A> (12198)<BR>2. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=146'>sgeos</A> (2421)<BR>3. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=5846'>HyperHacker</A> (2404)<BR>4. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=1120'>sajiimori</A> (2226)<BR>5. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=2686'>keldon</A> (2158)<BR><BR><B>Members:</B> 11811<BR><B>Articles:</B> 175447<BR>
+</FONT></TD>
+</TR>
+</TABLE></TD>
+</TR>
+</TABLE>
+</FONT>
+</BODY>
+
+<!-- Mirrored from gbadev.org/demos.php?showinfo=1432 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 22:59:33 GMT -->
+</HTML>

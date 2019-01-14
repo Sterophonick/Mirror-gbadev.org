@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from gbadev.org/tools.php?showinfo=1484 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 22:12:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<HEAD>
+	<TITLE>Gameboy Advance Development</TITLE>
+	<STYLE TYPE='text/css'>
+		<!--
+		a.menu:link     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited:hover     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a:link          { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited       { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited:hover { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		// -->
+	</STYLE>
+	<LINK HREF='http://rss.gbadev.org/feed.php' REL='alternate' TITLE='GBADEV.ORG RSS' TYPE='application/rss+xml'>
+	<META HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=iso-8859-1'>
+	<META HTTP-EQUIV='Content-Style-Type' CONTENT='text/css'>
+</HEAD>
+
+<BODY BGCOLOR='#FFFFFF' TEXT='#000000'>
+
+<TABLE BORDER='0' CELLSPACING='5' CELLPADDING='0' WIDTH='800'>
+	<TR>
+		<TD WIDTH='160'></TD>
+		<TD ALIGN='CENTER' BGCOLOR='#FFFFFF'><IMG SRC='gbadev.png' WIDTH='600' HEIGHT='54' ALT='logo'></TD>
+		<TD WIDTH='200'></TD>
+	</TR>
+	<TR>
+		<TD VALIGN='TOP' WIDTH='170' BGCOLOR='#FFFFFF'>
+		<TABLE WIDTH='165' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Menu</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+	<FONT FACE='verdana'>
+	<A HREF='index-2.html' CLASS='menu'>Main</A><BR>
+	<A HREF='about.html' CLASS='menu'>About</A><BR>
+	<A HREF='search.html' CLASS='menu'>Search</A><BR>
+	<A HREF='submit.html' CLASS='menu'>Submit News</A><BR>
+	<A HREF='archive.html' CLASS='menu'>News Archive</A><BR>
+	<A HREF='http://forum.gbadev.org/' CLASS='menu'>Forum</A><BR>
+	<A HREF='contact.html' CLASS='menu'>Contact Us</A><BR>
+	<br>
+	<A HREF='tools.html' CLASS='menu'>Tools</A><BR>
+	<A HREF='demos.html' CLASS='menu'>Games/Demos</A><BR>
+	<A HREF='sources.html' CLASS='menu'>Sourcecode</A><BR>
+	<A HREF='docs.html' CLASS='menu'>Documentation</A><BR>
+	<A HREF='hardware.html' CLASS='menu'>Hardware</A><BR>
+	<A HREF='developers.html' CLASS='menu'>Developers</A><BR>
+	</FONT></TD>
+</TR>
+</TABLE></TD>
+		<TD VALIGN='TOP' WIDTH='600' BGCOLOR='#FFFFFF'>
+		<TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>Tools</B></FONT><BR></TD>
+		</TR>
+		<TR>
+			<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'>
+
+<B>mGBA 0.7 beta 1</B> [Tools/Emulator]<BR>
+<BR>Made by: <A HREF='developers20db.html?author=532'>endrift</A><BR>Released: 2018-09-26<BR>Download: <A HREF='mGBA-0.7-b1-win323298.zip?section=tools&amp;ID=1484'>mGBA-0.7-b1-win32.zip</A><BR><BR>
+		mGBA is a new generation of Game Boy Advance emulator. The project started in April 2013 with the goal of being fast enough to run on lower end hardware than other emulators support, without sacrificing accuracy or portability. Even in the initial version, games generally played without problems. mGBA has only gotten better since then, and now boasts being the most accurate GBA emulator around.<br />
+<br />
+Other goals include accurate enough emulation to provide a development environment for homebrew software, a good workflow for tool-assist runners, and a modern feature set for emulators that older emulators may not support.<br />
+<br />
+mGBA is licensed under the Mozilla Public License 2.0, and the code can be found on <a href="https://github.com/mgba-emu/mgba" target="new">GitHub</a>.<br />
+<br />
+Up-to-date news and downloads can be found at <a href="https://mgba.io/" target="new">mgba.io</a>.<br />
+<br />
+While it’s been long enough since mGBA 0.6.0 came out that the release of mGBA 0.7.0 has seemed like it may never happen, I’m glad to say we’re finally reaching the end of mGBA 0.6’s time. Due to significant life changes, not the least of which is getting a new job with a long, tiring commute, I’ve not has as much time to do serious feature work. However, there have been plenty of changes, fixes, improvements under the hood. Though mGBA 0.7.0 is almost ready I’d like to see a signficant wave of testing and bugfixes before I deem it stable. As such, mGBA 0.7 beta 1 is now available, and hopefully the release of mGBA 0.7.0 will be out within a week or two.<br />
+<br />
+This time around the biggest areas of change are not new features, but rather significant improvements in existing areas. Please focus on these while testing and report any and all bugs on <a href="https://mgba.io/i/" target="new">GitHub</a> or email bugs@mgba.io.<br />
+<br />
+• Game Boy audio has been revamped. It may not sound correct in many cases and narrowing down which cases are reliably broken will help fix them.<br />
+• New Game Boy peripherals are supported, including the Camera, Printer, and Super Game Boy. Additionally, several new mappers have partial support.<br />
+• Debugging tools are improved, including a map viewer, conditional breakpoints, and symbol loading.<br />
+• There are now translations for Italian and French that are not well reviewed and partially incomplete.<br />
+• Switch support is brand new and very young. It’s very likely to be full of bugs.<br />
+<br />
+<b>Supported Platforms:</b><br />
+• Windows Vista or newer<br />
+• OS X 10.7 (Lion)[3] or newer<br />
+• Linux<br />
+• FreeBSD<br />
+• Nintendo 3DS<br />
+• Nintendo Switch<br />
+• Wii<br />
+• PlayStation Vita<br />
+<br />
+The following changes were made between 0.6.3 and 0.7 beta 1:<br />
+<br />
+<b>Features:</b><br />
+• ELF support<br />
+• Game Boy Camera support<br />
+• Qt: Set default Game Boy colors<br />
+• Game Boy Printer support<br />
+• Super Game Boy support<br />
+• Customizable autofire speed<br />
+• Ability to set default Game Boy model<br />
+• Map viewer<br />
+• Automatic cheat loading and saving<br />
+• GameShark and Action Replay button support<br />
+• AGBPrint support<br />
+• Debugger: Conditional breakpoints and watchpoints<br />
+• Ability to select GB/GBC/SGB BIOS on console ports<br />
+• Optional automatic state saving/loading<br />
+• Access to ur0 and uma0 partitions on the Vita<br />
+• Partial support for MBC6, MMM01, TAMA and HuC-1 GB mappers<br />
+• GBA: ARMIPS/A22i-style and ELF symbol table support<br />
+• Initial Switch port<br />
+<br />
+<b>Bugfixes:</b><br />
+• GB Audio: Make audio unsigned with bias (fixes #749)<br />
+• GB Serialize: Fix audio state loading<br />
+• GB Video: Fix dot clock timing being slightly wrong<br />
+• Qt: Fix GL display when loading a game from CLI (fixes #843)<br />
+• ARM: Fix MSR when T bit is set<br />
+• GB Serialize: Fix game title check<br />
+• GB: Revamp IRQ handling based on new information<br />
+• GBA Video: Don’t mask out high bits of BLDY (fixes #899)<br />
+• GB Video: Fix loading states while in mode 3<br />
+• GBA DMA: Fix invalid DMA reads (fixes #142)<br />
+• GBA Video: Add delay when enabling BGs (fixes #744, #752)<br />
+• GB Timer: Minor accuracy improvements<br />
+• GB Audio: Clock frame events on DIV<br />
+• GBA Timer: Fix timers sometimes being late (fixes #1012)<br />
+• GBA Hardware: Fix RTC overriding light sensor (fixes #1069)<br />
+• GBA Savedata: Fix savedata modified time updating when read-only<br />
+• GB Video: Fix enabling window when LY > WY (fixes #409)<br />
+• GBA Video: Start timing mid-scanline when skipping BIOS<br />
+• Core: Fix audio sync breaking when interrupted<br />
+• Qt: Improve FPS timer stability<br />
+• GBA Serialize: Fix loading channel 3 volume (fixes #1107)<br />
+• GBA SIO: Fix unconnected SIOCNT for multi mode (fixes #1105)<br />
+• GBA BIOS: Fix BitUnPack final byte<br />
+• GB I/O: DMA register is R/W<br />
+• GB Video: Fix SCX timing<br />
+• GBA Video: Improve sprite cycle counting (fixes #1126)<br />
+• GB, GBA Savedata: Fix savestate loading overwriting saves on reset<br />
+• GBA Video: Make layer disabling work consistently<br />
+• GB: Fix IRQ disabling on the same T-cycle as an assert<br />
+• Core: Fix ordering events when scheduling during events<br />
+• GBA: Reset WAITCNT properly<br />
+• GBA Serialize: Fix loading states in Hblank<br />
+• PSP2: Fix more issues causing poor audio<br />
+• GBA Memory: Fix Vast Fame support (taizou) (fixes #1170)<br />
+• GB, GBA Savedata: Fix unmasking savedata crash<br />
+• GBA DMA: Fix temporal sorting of DMAs of different priorities<br />
+• FFmpeg: Fix encoding audio/video queue issues<br />
+• GB Serialize: Fix IRQ pending/EI pending confusion<br />
+• GB MBC: Improve multicart detection heuristic (fixes #117)<br />
+• GB Audio: Fix channel 3 reset value<br />
+• GB Audio: Fix channel 4 initial LFSR<br />
+• GB, GBA Video: Don’t call finishFrame twice in thread proxy<br />
+• GB Audio: Fix channel 1, 2 and 4 reset timing<br />
+• Util: Fix wrapping edge cases in RingFIFO<br />
+<br />
+<b>Misc:</b><br />
+• GBA Timer: Use global cycles for timers<br />
+• GBA: Extend oddly-sized ROMs to full address space (fixes #722)<br />
+• All: Make FIXED_ROM_BUFFER an option instead of 3DS-only<br />
+• Qt: Redo GameController into multiple classes<br />
+• Test: Restructure test suite into multiple executables<br />
+• Python: Integrate tests from cinema test suite<br />
+• Util: Don’t build crc32 if the function already exists<br />
+• GBA: Implement display start DMAs<br />
+• Qt: Prevent window from being created off-screen<br />
+• Qt: Add option to disable FPS display<br />
+• GBA: Improve multiboot image detection<br />
+• GB MBC: Remove erroneous bank 0 wrapping<br />
+• GBA Cheats: Allow multiple ROM patches in the same slot<br />
+• GB: Skip BIOS option now works<br />
+• Libretro: Add frameskip option<br />
+• GBA Memory: 64 MiB GBA Video cartridge support<br />
+• PSP2: Use system enter key by default<br />
+• 3DS: Remove deprecated CSND interface<br />
+• Qt: Options to mess around with layer placement<br />
+• GBA Savedata: Remove ability to disable realistic timing<br />
+• Qt: Add load alternate save option<br />
+• GB Audio: Improved audio quality<br />
+• GB, GBA Audio: Increase max audio volume<br />
+• GB: Fix VRAM/palette locking (fixes #1109)<br />
+• GB Video: Darken colors in GBA mode<br />
+• FFmpeg: Support libswresample (fixes #1120, Bug 123)<br />
+• FFmpeg: Support lossless h.264 encoding<br />
+• Feature: Added loading savestates from command line<br />
+• Qt: Allow pausing game at load (fixes #1129)<br />
+• Wii: Move audio handling to callbacks (fixes #803)<br />
+• Qt: Clean up FPS target UI (fixes #436)<br />
+• Core: Remove broken option for whether rewinding restores save games<br />
+• FFmpeg: Support lossless VP9 encoding<br />
+• mGUI: Add fast forward toggle<BR>
+<BR></TD>
+</TR>
+</TABLE></TD>
+<TD VALIGN='TOP' WIDTH='190' BGCOLOR='#FFFFFF'>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Games</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/2004Mbit_logo.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosff89.html?showinfo=1271'>2004Mbit Compo Game</A><BR>2. <A HREF='demos8c1f.html?showinfo=434'>Xmen V StreetFighter J Edition</A><BR>3. <A HREF='demosb964.html?showinfo=1279'>Another World GBA v2.1</A><BR>4. <A HREF='demos34fb.html?showinfo=1353'>MarioBreak!</A><BR>5. <A HREF='demos1485.html?showinfo=1354'>FF4 Advance- The Return of Golbez</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Demos</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/SmashBrosAdvance.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosf3bc.html?showinfo=1275'>Smash Bros. Advance</A><BR>2. <A HREF='demos4f79.html?showinfo=472'>Half Life</A><BR>3. <A HREF='demos7150.html?showinfo=1332'>Jespa3D Engine ver 1.39</A><BR>4. <A HREF='demos9e74.html?showinfo=1276'>BulletGBA 5.0</A><BR>5. <A HREF='demos628a.html?showinfo=1329'>Final Fantasy 4th World Cup won by Italy</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Search</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='CENTER' VALIGN='CENTER' BGCOLOR='#CDCDCD'>
+	<FORM METHOD='POST' ACTION='http://gbadev.org/search.php'>
+	<INPUT TYPE='hidden' NAME='search_section' VALUE='All'>
+	<INPUT TYPE='text' NAME='search_input' MAXLENGTH='30' SIZE='14'>
+	<INPUT TYPE='submit' VALUE='Search'></FORM>
+	</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>GBADEV.ORG Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+
+<B>Visitors:</B><BR>
+<B>Days Online:</B> 6784<BR>
+
+<B>Articles:</B> 550<BR><B>Games:</B> 388<BR><B>Demos:</B> 237<BR><B>Tools:</B> 176<BR>
+</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Forum Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+<B>Top Posters:</B><BR>
+
+1. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=180'>tepples</A> (12198)<BR>2. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=146'>sgeos</A> (2421)<BR>3. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=5846'>HyperHacker</A> (2404)<BR>4. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=1120'>sajiimori</A> (2226)<BR>5. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=2686'>keldon</A> (2158)<BR><BR><B>Members:</B> 11811<BR><B>Articles:</B> 175447<BR>
+</FONT></TD>
+</TR>
+</TABLE></TD>
+</TR>
+</TABLE>
+</FONT>
+</BODY>
+
+<!-- Mirrored from gbadev.org/tools.php?showinfo=1484 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 22:12:13 GMT -->
+</HTML>

@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from gbadev.org/index.php?showinfo=1455 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 23:04:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<HEAD>
+	<TITLE>Gameboy Advance Development</TITLE>
+	<STYLE TYPE='text/css'>
+		<!--
+		a.menu:link     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited:hover     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a:link          { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited       { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited:hover { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		// -->
+	</STYLE>
+	<LINK HREF='http://rss.gbadev.org/feed.php' REL='alternate' TITLE='GBADEV.ORG RSS' TYPE='application/rss+xml'>
+	<META HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=iso-8859-1'>
+	<META HTTP-EQUIV='Content-Style-Type' CONTENT='text/css'>
+</HEAD>
+
+<BODY BGCOLOR='#FFFFFF' TEXT='#000000'>
+
+<TABLE BORDER='0' CELLSPACING='5' CELLPADDING='0' WIDTH='800'>
+	<TR>
+		<TD WIDTH='160'></TD>
+		<TD ALIGN='CENTER' BGCOLOR='#FFFFFF'><IMG SRC='gbadev.png' WIDTH='600' HEIGHT='54' ALT='logo'></TD>
+		<TD WIDTH='200'></TD>
+	</TR>
+	<TR>
+		<TD VALIGN='TOP' WIDTH='170' BGCOLOR='#FFFFFF'>
+		<TABLE WIDTH='165' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Menu</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+	<FONT FACE='verdana'>
+	<A HREF='index-2.html' CLASS='menu'>Main</A><BR>
+	<A HREF='about.html' CLASS='menu'>About</A><BR>
+	<A HREF='search.html' CLASS='menu'>Search</A><BR>
+	<A HREF='submit.html' CLASS='menu'>Submit News</A><BR>
+	<A HREF='archive.html' CLASS='menu'>News Archive</A><BR>
+	<A HREF='http://forum.gbadev.org/' CLASS='menu'>Forum</A><BR>
+	<A HREF='contact.html' CLASS='menu'>Contact Us</A><BR>
+	<br>
+	<A HREF='tools.html' CLASS='menu'>Tools</A><BR>
+	<A HREF='demos.html' CLASS='menu'>Games/Demos</A><BR>
+	<A HREF='sources.html' CLASS='menu'>Sourcecode</A><BR>
+	<A HREF='docs.html' CLASS='menu'>Documentation</A><BR>
+	<A HREF='hardware.html' CLASS='menu'>Hardware</A><BR>
+	<A HREF='developers.html' CLASS='menu'>Developers</A><BR>
+	</FONT></TD>
+</TR>
+</TABLE></TD>
+		<TD VALIGN='TOP' WIDTH='600' BGCOLOR='#FFFFFF'>
+
+<TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+	<TR>
+		<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+		<FONT FACE='verdana' SIZE='2'><B>mGBA 0.5.0</B></FONT><BR><FONT SIZE='1'>By <A HREF='developers20db.html?author=532'>endrift</A> [Wednesday September 21st 00:08:49 UTC 2016]</FONT></TD>
+		<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>News : General</B></FONT></TD>
+		<TR>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='indexe789.html?showinfo=1455'>Permalink</A></TD>
+		</TR>
+	</TR>
+	<TR>
+		<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+		<FONT FACE='verdana' SIZE='2'>mGBA is a new emulator for running Game Boy Advance games. It aims to be faster and more accurate than many existing Game Boy Advance emulators, as well as adding features that other emulators lack.<br />
+<br />
+Up-to-date news and downloads can be found at <a href="https://mgba.io/" target="new">mgba.io</a>.<br />
+<br />
+After a long dry spell, a new release of mGBA, version 0.5.0, is available. This is a major feature release, and includes, among other features, Game Boy and Game Boy Color support. There are other enhancements and bugfixes across the board, and an extensive list follows after the cut.<br />
+<br />
+<b>Features:</b><br />
+• Game Boy support<br />
+• Support for encrypted CodeBreaker GBA cheats<br />
+• Emulation of Vast Fame protected GBA carts (taizou)<br />
+• Tile viewer<br />
+• Threaded rendering mode<br />
+• Libretro: Memory map and achievement support (leiradel)<br />
+• GUI: Add UI control remapping<br />
+• GUI: Add fast-forward<br />
+• Wii: 240p support<br />
+• 3DS: Adjustable screen darkening<br />
+• Ability to temporarily load a savegame<br />
+• Load specific files out of archives<br />
+• Automatic BIOS detection<br />
+<br />
+<b>Supported Platforms:</b><br />
+• Windows Vista or newer<br />
+• OS X 10.7 (Lion)[3] or newer<br />
+• Linux<br />
+• FreeBSD<br />
+• Nintendo 3DS<br />
+• Wii<br />
+• PlayStation Vita<br />
+<br />
+<b><i>0.5.0: (2016-09-20)<br />
+Bugfixes:</b><br />
+• ARM7: Fix decoding of Thumb ADD (variants 5 and 6)<br />
+• Debugger: Fix GDB breakpoints<br />
+• GBA: Fix losing IRQs when CPSR I bit isnâ€™t cleared<br />
+• GBA: Fix filehandle leak with savegames<br />
+• GBA: Timer 0 cannot be count up<br />
+• GBA: Count up timers should not count themselves<br />
+• GBA Memory: Fix mirror on non-overdumped Classic NES games<br />
+• GBA Memory: Fix ldm {pc}<br />
+• GBA Savedata: Fix savedata sync timer<br />
+• GBA Savedata: Only unmap savedata if present<br />
+• GBA Serialize: Savestates now properly store prefetch<br />
+• GBA Video: WIN0/1 take priority over OBJWIN<br />
+• GBA Video: Fix out-of-order OBJWIN<br />
+• PSP2: Fix GPU crash while exiting<br />
+• PSP2: Fix VSync<br />
+• PSP2: Fix accelerometer range<br />
+• PSP2: Actually load screen mode setting<br />
+• PSP2: Fix gyroscope direction<br />
+• PSP2: Delete threads after they return<br />
+• PSP2: Fix mapping/unmapping from not at 0<br />
+• Qt: Fix bug in software renderer scaling<br />
+• Qt: Fix hanging key press after disabling autofire<br />
+• Qt: Fix being unable to pause manually when using auto-pausing<br />
+• SDL: Fix axes being mapped wrong<br />
+• Util: Fix realloc semantics in utf16to8<br />
+• Util: Fix inserting too many items into a hash table<br />
+• VFS: Fix uninitialized varaible reading from 7z<br />
+• VFS: Fix reading multiple files from a 7z archive<br />
+• Wii: Fix framelimiting after a slowdown<br />
+• Wii: Fix garbage flash at startup<br />
+<br />
+<b>Misc:</b><br />
+• 3DS: Use blip_add_delta_fast for a small speed improvement<br />
+• 3DS: Allow UTF-16 filenames<br />
+• 3DS: Port to using citro3D<br />
+• 3DS: Use system font for menus<br />
+• 3DS: Attempt to use Core 2 for threads<br />
+• 3DS: Adjustable filering<br />
+• 3DS: 3D banner<br />
+• All: Add QUIET parameter to silence CMake<br />
+• All: Faster memory read/write<br />
+• ARM7: Support forcing Thumb mode via MSR<br />
+• ARM7: Flush prefetch cache when loading CPSR via MSR<br />
+• ARM7: Clean up instruction decoding for future expandability<br />
+• Debugger: Support register and memory writes via GDB stub<br />
+• Debugger: Add software breakpoint support to gdb<br />
+• FFmpeg: Full support for libavcodec 56+<br />
+• GBA: Better debug logging if event processing breaks<br />
+• GBA Audio: Force audio DMAs to not increment destination<br />
+• GBA BIOS: Use custom ArcTan, not relying on OS<br />
+• GBA Hardware: Clean up dead code in GBP<br />
+• GBA Memory: Optimize stalling behavior<br />
+• GBA Memory: Optimize Load-/StoreMultiple<br />
+• GBA Savedata: Add realistic timing for EEPROM<br />
+• GBA Serialize: Savestates now store if CPU was halted<br />
+• GBA Video: Remove old slow path fallback<br />
+• GBA Video: Optimize sprite drawing<br />
+• GBA Video: Optimize mode 0 rendering<br />
+• GBA Video: Optimize compositing cases slightly<br />
+• GUI: Screenshot dimensions are now passed through<br />
+• GUI: Add back logging<br />
+• GUI: Only reload config if manually saved<br />
+• GUI: Increase scrolling speed<br />
+• OpenGL: Log shader compilation failure<br />
+• OpenGL: Add texSize uniform<br />
+• Qt: Make -g flag work in Qt build<br />
+• Qt: Simplify OpenGL context creation<br />
+• Qt: Thread startup improvements<br />
+• Qt: Make audio channel/video layer options shortcut mappable<br />
+• Qt: Remove some C99isms from C++ code<br />
+• Qt: Remove default autofire mappings<br />
+• Qt: Make reseting when pasued frame-accurate<br />
+• Qt: Rearchitect game closing codepath<br />
+• PSP2: Use system font for menus<br />
+• PSP2: Add rumble for PS TV<br />
+• PSP2: Add fit-to-height screen mode<br />
+• PSP2: Sync files per descriptor<br />
+• PSP2: Allow UTF-8 filenames<br />
+• PSP2: Screenshots are now saved into the Photo Gallery<br />
+• PSP2: Stop underclocking when menuing<br />
+• SDL: Increase default audio buffer size to 1024 samples<br />
+• SDL: More responsive rumble<br />
+• Util: Add Vector GetConstPointer<br />
+• Util: Add rtrim<br />
+• Util: Add endswith<br />
+• VFS: Improve zip file detection<br />
+• Wii: Add pixelated resample filter<br />
+• Windows: Add native VDir support<br />
+• Util: Add PRIz macro for libc versions that donâ€™t support %z</i><BR></TD>
+	</TR></TABLE><SMALL>&nbsp;</SMALL><BR>
+</TD>
+<TD VALIGN='TOP' WIDTH='190' BGCOLOR='#FFFFFF'>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Games</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/2004Mbit_logo.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosff89.html?showinfo=1271'>2004Mbit Compo Game</A><BR>2. <A HREF='demos8c1f.html?showinfo=434'>Xmen V StreetFighter J Edition</A><BR>3. <A HREF='demosb964.html?showinfo=1279'>Another World GBA v2.1</A><BR>4. <A HREF='demos34fb.html?showinfo=1353'>MarioBreak!</A><BR>5. <A HREF='demos1485.html?showinfo=1354'>FF4 Advance- The Return of Golbez</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Demos</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/SmashBrosAdvance.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosf3bc.html?showinfo=1275'>Smash Bros. Advance</A><BR>2. <A HREF='demos4f79.html?showinfo=472'>Half Life</A><BR>3. <A HREF='demos7150.html?showinfo=1332'>Jespa3D Engine ver 1.39</A><BR>4. <A HREF='demos9e74.html?showinfo=1276'>BulletGBA 5.0</A><BR>5. <A HREF='demos628a.html?showinfo=1329'>Final Fantasy 4th World Cup won by Italy</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Search</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='CENTER' VALIGN='CENTER' BGCOLOR='#CDCDCD'>
+	<FORM METHOD='POST' ACTION='http://gbadev.org/search.php'>
+	<INPUT TYPE='hidden' NAME='search_section' VALUE='All'>
+	<INPUT TYPE='text' NAME='search_input' MAXLENGTH='30' SIZE='14'>
+	<INPUT TYPE='submit' VALUE='Search'></FORM>
+	</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>GBADEV.ORG Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+
+<B>Visitors:</B><BR>
+<B>Days Online:</B> 6784<BR>
+
+<B>Articles:</B> 550<BR><B>Games:</B> 388<BR><B>Demos:</B> 237<BR><B>Tools:</B> 176<BR>
+</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Forum Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+<B>Top Posters:</B><BR>
+
+1. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=180'>tepples</A> (12198)<BR>2. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=146'>sgeos</A> (2421)<BR>3. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=5846'>HyperHacker</A> (2404)<BR>4. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=1120'>sajiimori</A> (2226)<BR>5. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=2686'>keldon</A> (2158)<BR><BR><B>Members:</B> 11811<BR><B>Articles:</B> 175447<BR>
+</FONT></TD>
+</TR>
+</TABLE></TD>
+</TR>
+</TABLE>
+</FONT>
+</BODY>
+
+<!-- Mirrored from gbadev.org/index.php?showinfo=1455 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 23:04:45 GMT -->
+</HTML>

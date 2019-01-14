@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from gbadev.org/tools.php?showinfo=1444 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 22:43:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<HEAD>
+	<TITLE>Gameboy Advance Development</TITLE>
+	<STYLE TYPE='text/css'>
+		<!--
+		a.menu:link     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited:hover     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a:link          { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited       { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited:hover { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		// -->
+	</STYLE>
+	<LINK HREF='http://rss.gbadev.org/feed.php' REL='alternate' TITLE='GBADEV.ORG RSS' TYPE='application/rss+xml'>
+	<META HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=iso-8859-1'>
+	<META HTTP-EQUIV='Content-Style-Type' CONTENT='text/css'>
+</HEAD>
+
+<BODY BGCOLOR='#FFFFFF' TEXT='#000000'>
+
+<TABLE BORDER='0' CELLSPACING='5' CELLPADDING='0' WIDTH='800'>
+	<TR>
+		<TD WIDTH='160'></TD>
+		<TD ALIGN='CENTER' BGCOLOR='#FFFFFF'><IMG SRC='gbadev.png' WIDTH='600' HEIGHT='54' ALT='logo'></TD>
+		<TD WIDTH='200'></TD>
+	</TR>
+	<TR>
+		<TD VALIGN='TOP' WIDTH='170' BGCOLOR='#FFFFFF'>
+		<TABLE WIDTH='165' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Menu</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+	<FONT FACE='verdana'>
+	<A HREF='index-2.html' CLASS='menu'>Main</A><BR>
+	<A HREF='about.html' CLASS='menu'>About</A><BR>
+	<A HREF='search.html' CLASS='menu'>Search</A><BR>
+	<A HREF='submit.html' CLASS='menu'>Submit News</A><BR>
+	<A HREF='archive.html' CLASS='menu'>News Archive</A><BR>
+	<A HREF='http://forum.gbadev.org/' CLASS='menu'>Forum</A><BR>
+	<A HREF='contact.html' CLASS='menu'>Contact Us</A><BR>
+	<br>
+	<A HREF='tools.html' CLASS='menu'>Tools</A><BR>
+	<A HREF='demos.html' CLASS='menu'>Games/Demos</A><BR>
+	<A HREF='sources.html' CLASS='menu'>Sourcecode</A><BR>
+	<A HREF='docs.html' CLASS='menu'>Documentation</A><BR>
+	<A HREF='hardware.html' CLASS='menu'>Hardware</A><BR>
+	<A HREF='developers.html' CLASS='menu'>Developers</A><BR>
+	</FONT></TD>
+</TR>
+</TABLE></TD>
+		<TD VALIGN='TOP' WIDTH='600' BGCOLOR='#FFFFFF'>
+		<TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>Tools</B></FONT><BR></TD>
+		</TR>
+		<TR>
+			<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'>
+
+<B>Grit v0.8.6</B> [Tools/Graphics]<BR>
+<BR>Made by: <A HREF='developers2b3e.html?author=449'>Cearn</A><BR>Released: 2016-02-06<BR>Download: <A HREF='grit-0.8.601e4.zip?section=tools&amp;ID=1444'>grit-0.8.6.zip</A><BR><BR>
+		<b>GBA Raster Image Transmogrifier</b><br />
+<br />
+Grit and its GUI version Wingrit are my image converters for the GBA (and NDS I guess). They can do most of the simple things like reading an image (pretty much any type of bitmap thanks to <a href="http://freeimage.sourceforge.net/" target="new">FreeImage</a>) and converting it to binary data of various bitdepths which can be directly put into VRAM, but also more complicated matters such as tiling and metatiling (for 1D object mapping for example), making a tilemap along with a reduced tileset (or using an external tileset), popular map layouts, and compression compatible with the GBA&#039;s BIOS routines. The capability for an NDS alphabit has been added recently as well. Output can be C/asm arrays, raw binary, <a href="http://www.pineight.com/gba/#gbfs" target="new">GBFS</a>, and a RIFF-based format called GRF.<br />
+<br />
+Not good enough? Well, the source code is available too, so you&#039;re free to modify it. The code should be platform independent right now, or at least very nearly so; the catch being that you might have add or remove some type definitions and maybe create your own makefile for compilation.<br />
+<br />
+â€¢ See more at: <a href="http://www.coranac.com/projects/grit/" target="new">http://www.coranac.com/projects/grit/</a><br />
+<br />
+<b>Features:</b><br />
+â€¢ (Win)grit converts bitmaps into palettes, graphic data (tile or bitmap formats), tilemaps and metamaps.<br />
+â€¢ The output is in C arrays, asm arrays, binary files or a GBFS archive (tepples&#039; GameBoy File system).<br />
+â€¢ (Win)grit supports the three main BIOS compression formats (LZ77, huffman, RLE), as well as graphics bitpacking to allow graphic data of 1,2,4,8 and 16 bpp. <br />
+â€¢ The data arrays can be in byte, halfword or word formats and a header file can be created with the declarations of these.<br />
+â€¢ The tilemapping option includes unique tile reduction, different map layouts and even metamapping with variable width and heights. This can also be used for 1D sprite-sheet conversions.<br />
+<br />
+<b>Grit:</b><br />
+Grit is the command-line version. For the basic CLI functionality I am indebted to <a href="http://www.tolberts.net/" target="new">gauauu</a>, who basically handed me a set of CLI functions, which proved a _lot_ easier to use than what I had  initially planned on using. Also great has been <a href="http://www.devkitpro.org/" target="new">Dave Murphy</a> for multi-platform.<BR>
+<BR></TD>
+</TR>
+</TABLE></TD>
+<TD VALIGN='TOP' WIDTH='190' BGCOLOR='#FFFFFF'>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Games</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/2004Mbit_logo.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosff89.html?showinfo=1271'>2004Mbit Compo Game</A><BR>2. <A HREF='demos8c1f.html?showinfo=434'>Xmen V StreetFighter J Edition</A><BR>3. <A HREF='demosb964.html?showinfo=1279'>Another World GBA v2.1</A><BR>4. <A HREF='demos34fb.html?showinfo=1353'>MarioBreak!</A><BR>5. <A HREF='demos1485.html?showinfo=1354'>FF4 Advance- The Return of Golbez</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Demos</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/SmashBrosAdvance.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosf3bc.html?showinfo=1275'>Smash Bros. Advance</A><BR>2. <A HREF='demos4f79.html?showinfo=472'>Half Life</A><BR>3. <A HREF='demos7150.html?showinfo=1332'>Jespa3D Engine ver 1.39</A><BR>4. <A HREF='demos9e74.html?showinfo=1276'>BulletGBA 5.0</A><BR>5. <A HREF='demos628a.html?showinfo=1329'>Final Fantasy 4th World Cup won by Italy</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Search</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='CENTER' VALIGN='CENTER' BGCOLOR='#CDCDCD'>
+	<FORM METHOD='POST' ACTION='http://gbadev.org/search.php'>
+	<INPUT TYPE='hidden' NAME='search_section' VALUE='All'>
+	<INPUT TYPE='text' NAME='search_input' MAXLENGTH='30' SIZE='14'>
+	<INPUT TYPE='submit' VALUE='Search'></FORM>
+	</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>GBADEV.ORG Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+
+<B>Visitors:</B><BR>
+<B>Days Online:</B> 6784<BR>
+
+<B>Articles:</B> 550<BR><B>Games:</B> 388<BR><B>Demos:</B> 237<BR><B>Tools:</B> 176<BR>
+</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Forum Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+<B>Top Posters:</B><BR>
+
+1. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=180'>tepples</A> (12198)<BR>2. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=146'>sgeos</A> (2421)<BR>3. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=5846'>HyperHacker</A> (2404)<BR>4. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=1120'>sajiimori</A> (2226)<BR>5. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=2686'>keldon</A> (2158)<BR><BR><B>Members:</B> 11811<BR><B>Articles:</B> 175447<BR>
+</FONT></TD>
+</TR>
+</TABLE></TD>
+</TR>
+</TABLE>
+</FONT>
+</BODY>
+
+<!-- Mirrored from gbadev.org/tools.php?showinfo=1444 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 22:43:26 GMT -->
+</HTML>

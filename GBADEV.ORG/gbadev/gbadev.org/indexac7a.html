@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<HTML>
+
+<!-- Mirrored from gbadev.org/index.php?ID=30 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 23:07:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<HEAD>
+	<TITLE>Gameboy Advance Development</TITLE>
+	<STYLE TYPE='text/css'>
+		<!--
+		a.menu:link     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a.menu:visited:hover     { font: 14pt verdana; color: #000000; text-decoration: none; }
+		a:link          { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited       { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		a:visited:hover { font: bold 10pt verdana; color: #3333FF; text-decoration: none; }
+		// -->
+	</STYLE>
+	<LINK HREF='http://rss.gbadev.org/feed.php' REL='alternate' TITLE='GBADEV.ORG RSS' TYPE='application/rss+xml'>
+	<META HTTP-EQUIV='Content-Type' CONTENT='text/html; charset=iso-8859-1'>
+	<META HTTP-EQUIV='Content-Style-Type' CONTENT='text/css'>
+</HEAD>
+
+<BODY BGCOLOR='#FFFFFF' TEXT='#000000'>
+
+<TABLE BORDER='0' CELLSPACING='5' CELLPADDING='0' WIDTH='800'>
+	<TR>
+		<TD WIDTH='160'></TD>
+		<TD ALIGN='CENTER' BGCOLOR='#FFFFFF'><IMG SRC='gbadev.png' WIDTH='600' HEIGHT='54' ALT='logo'></TD>
+		<TD WIDTH='200'></TD>
+	</TR>
+	<TR>
+		<TD VALIGN='TOP' WIDTH='170' BGCOLOR='#FFFFFF'>
+		<TABLE WIDTH='165' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Menu</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+	<FONT FACE='verdana'>
+	<A HREF='index-2.html' CLASS='menu'>Main</A><BR>
+	<A HREF='about.html' CLASS='menu'>About</A><BR>
+	<A HREF='search.html' CLASS='menu'>Search</A><BR>
+	<A HREF='submit.html' CLASS='menu'>Submit News</A><BR>
+	<A HREF='archive.html' CLASS='menu'>News Archive</A><BR>
+	<A HREF='http://forum.gbadev.org/' CLASS='menu'>Forum</A><BR>
+	<A HREF='contact.html' CLASS='menu'>Contact Us</A><BR>
+	<br>
+	<A HREF='tools.html' CLASS='menu'>Tools</A><BR>
+	<A HREF='demos.html' CLASS='menu'>Games/Demos</A><BR>
+	<A HREF='sources.html' CLASS='menu'>Sourcecode</A><BR>
+	<A HREF='docs.html' CLASS='menu'>Documentation</A><BR>
+	<A HREF='hardware.html' CLASS='menu'>Hardware</A><BR>
+	<A HREF='developers.html' CLASS='menu'>Developers</A><BR>
+	</FONT></TD>
+</TR>
+</TABLE></TD>
+		<TD VALIGN='TOP' WIDTH='600' BGCOLOR='#FFFFFF'>
+
+<TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>Goodboy Advance</B></FONT><BR>
+			<FONT SIZE='1'>By <A HREF='developers4e6f.html?author=546'>exelotl</A> [Tuesday December 4th 23:05:19 UTC 2018]</FONT></TD>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>Games : Platform</B></FONT></TD>
+			<TR>
+				<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='demos8598.html?showinfo=1486'>Permalink</A></TD>
+			</TR>
+		</TR>
+		<TR>
+			<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'><IMG SRC='demos/goodBoyAdv.png'><BR>
+A short exploration platformer for the Gameboy Advance, about a dog and his red rocket.<br />
+A Ludum Dare 43 Jam game by <a href="http://www.twitter.com/exelotl" target="new">@exelotl</a> and <a href="http://www.twitter.com/hot_pengu" target="new">@hot_pengu</a>, for the theme:<br />
+<b>&#039;Sacrifices Must Be Made&#039;</b>.<br />
+<br />
+This games gfx/music/sfx & programming, was fully developed in just 3 days!<br />
+There is also a playable browser version of the game which you can find <a href="https://hotpengu.itch.io/goodboyadvance" target="new">here</a>.<br />
+Please give your <a href="https://hotpengu.itch.io/goodboyadvance" target="new">support</a> if you enjoy it!<BR><BR><B>Download: </B><A HREF='goodBoyAdve4c4.zip?section=demos&amp;ID=1486'>goodBoyAdv.zip</A><BR><BR></TD>
+		</TR>
+		</TABLE>
+		<SMALL>&nbsp;</SMALL><BR><TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>no$gba v2.9b</B></FONT><BR>
+			<FONT SIZE='1'>By <A HREF='developersaaca.php?author=464'>Martin Korth</A> [Wednesday October 3rd 15:52:39 UTC 2018]</FONT></TD>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>Tools : Emulator</B></FONT></TD>
+			<TR>
+				<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='toolsd589.html?showinfo=1485'>Permalink</A></TD>
+			</TR>
+		</TR>
+		<TR>
+			<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'>no$gba is a <b>Gameboy Advance / NDS / DSi</b> emulator & debugger for Windows.<br />
+<br />
+The no$gba debugger is a powerful programming tool for professional developers. If you are a developer, please see no$gba homepage for more info:<br />
+<a href="http://problemkaputt.de/gba.htm" target="new">http://problemkaputt.de/gba.htm</a><br />
+<br />
+<b>30 Sep 2018 - version 2.9b</b><br />
+<i>• web: created no$project patreon page, https://www.patreon.com/martin_korth<br />
+• dsi/emu: allows 8bit vram writes on dsi (if enabled in SCFG_EXT9.bit13)<br />
+• dsi/help: added note on dsi debug blowfish key used when SCFG_OP nonzero<br />
+• carthdr/help: added carthdr[0B0h] "DoNotZeroFillMem"=unlaunch fastboot ID<br />
+• dma/help: added note on dma-fill via 40000Exh being slower than stmia/ndma<br />
+• dsi/help: added note on broken cameras being more common than unknown cameras<br />
+• dsi/tsc/iomap: shows tsc page 0,1,3 registers (page 3 is hidden in aes tab)<br />
+• dsi/tsc/emu: basic emulation for reading/writing tsc page 0,1,3 registers<br />
+• dsi/startdirect: initializes GPIO registers (sound,powerbutt,wifimode)<br />
+• a22i: throws error message on forward references within .pack blocks<br />
+• nds/cart: supports flashcarts with arm9 code below offset 4000h (ievolution)<br />
+• nds/bugfix: resurrected BG0CNT/BG1CNT.bit13 (unlike GBA) (thanks chocoreep)<br />
+• dsi/help: info about ST NAND02G AH0LZC5 emmc chips (thanks barawer+trade girl)<br />
+• dsi/emmc: emulates different eMMC CSD&#039;s (matched to four known eMMC CID&#039;s)</i><BR><BR><B>Download: </B><A HREF='no%24gba29b218a.zip?section=tools&amp;ID=1485'>no$gba29b.zip</A><BR><BR></TD>
+		</TR>
+		</TABLE>
+		<SMALL>&nbsp;</SMALL><BR><TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>mGBA 0.7 beta 1</B></FONT><BR>
+			<FONT SIZE='1'>By <A HREF='developers20db.html?author=532'>endrift</A> [Wednesday September 26th 16:11:56 UTC 2018]</FONT></TD>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>Tools : Emulator</B></FONT></TD>
+			<TR>
+				<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='toolsc391.html?showinfo=1484'>Permalink</A></TD>
+			</TR>
+		</TR>
+		<TR>
+			<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'>mGBA is a new generation of Game Boy Advance emulator. The project started in April 2013 with the goal of being fast enough to run on lower end hardware than other emulators support, without sacrificing accuracy or portability. Even in the initial version, games generally played without problems. mGBA has only gotten better since then, and now boasts being the most accurate GBA emulator around.<br />
+<br />
+Other goals include accurate enough emulation to provide a development environment for homebrew software, a good workflow for tool-assist runners, and a modern feature set for emulators that older emulators may not support.<br />
+<br />
+mGBA is licensed under the Mozilla Public License 2.0, and the code can be found on <a href="https://github.com/mgba-emu/mgba" target="new">GitHub</a>.<br />
+<br />
+Up-to-date news and downloads can be found at <a href="https://mgba.io/" target="new">mgba.io</a>.<br />
+<br />
+While it’s been long enough since mGBA 0.6.0 came out that the release of mGBA 0.7.0 has seemed like it may never happen, I’m glad to say we’re finally reaching the end of mGBA 0.6’s time. Due to significant life changes, not the least of which is getting a new job with a long, tiring commute, I’ve not has as much time to do serious feature work. However, there have been plenty of changes, fixes, improvements under the hood. Though mGBA 0.7.0 is almost ready I’d like to see a signficant wave of testing and bugfixes before I deem it stable. As such, mGBA 0.7 beta 1 is now available, and hopefully the release of mGBA 0.7.0 will be out within a week or two.<br />
+<br />
+This time around the biggest areas of change are not new features, but rather significant improvements in existing areas. Please focus on these while testing and report any and all bugs on <a href="https://mgba.io/i/" target="new">GitHub</a> or email bugs@mgba.io.<br />
+<br />
+• Game Boy audio has been revamped. It may not sound correct in many cases and narrowing down which cases are reliably broken will help fix them.<br />
+• New Game Boy peripherals are supported, including the Camera, Printer, and Super Game Boy. Additionally, several new mappers have partial support.<br />
+• Debugging tools are improved, including a map viewer, conditional breakpoints, and symbol loading.<br />
+• There are now translations for Italian and French that are not well reviewed and partially incomplete.<br />
+• Switch support is brand new and very young. It’s very likely to be full of bugs.<br />
+<br />
+<b>Supported Platforms:</b><br />
+• Windows Vista or newer<br />
+• OS X 10.7 (Lion)[3] or newer<br />
+• Linux<br />
+• FreeBSD<br />
+• Nintendo 3DS<br />
+• Nintendo Switch<br />
+• Wii<br />
+• PlayStation Vita<br />
+<br />
+The following changes were made between 0.6.3 and 0.7 beta 1:<br />
+<br />
+<b>Features:</b><br />
+• ELF support<br />
+• Game Boy Camera support<br />
+• Qt: Set default Game Boy colors<br />
+• Game Boy Printer support<br />
+• Super Game Boy support<br />
+• Customizable autofire speed<br />
+• Ability to set default Game Boy model<br />
+• Map viewer<br />
+• Automatic cheat loading and saving<br />
+• GameShark and Action Replay button support<br />
+• AGBPrint support<br />
+• Debugger: Conditional breakpoints and watchpoints<br />
+• Ability to select GB/GBC/SGB BIOS on console ports<br />
+• Optional automatic state saving/loading<br />
+• Access to ur0 and uma0 partitions on the Vita<br />
+• Partial support for MBC6, MMM01, TAMA and HuC-1 GB mappers<br />
+• GBA: ARMIPS/A22i-style and ELF symbol table support<br />
+• Initial Switch port<br />
+<br />
+<b>Bugfixes:</b><br />
+• GB Audio: Make audio unsigned with bias (fixes #749)<br />
+• GB Serialize: Fix audio state loading<br />
+• GB Video: Fix dot clock timing being slightly wrong<br />
+• Qt: Fix GL display when loading a game from CLI (fixes #843)<br />
+• ARM: Fix MSR when T bit is set<br />
+• GB Serialize: Fix game title check<br />
+• GB: Revamp IRQ handling based on new information<br />
+• GBA Video: Don’t mask out high bits of BLDY (fixes #899)<br />
+• GB Video: Fix loading states while in mode 3<br />
+• GBA DMA: Fix invalid DMA reads (fixes #142)<br />
+• GBA Video: Add delay when enabling BGs (fixes #744, #752)<br />
+• GB Timer: Minor accuracy improvements<br />
+• GB Audio: Clock frame events on DIV<br />
+• GBA Timer: Fix timers sometimes being late (fixes #1012)<br />
+• GBA Hardware: Fix RTC overriding light sensor (fixes #1069)<br />
+• GBA Savedata: Fix savedata modified time updating when read-only<br />
+• GB Video: Fix enabling window when LY > WY (fixes #409)<br />
+• GBA Video: Start timing mid-scanline when skipping BIOS<br />
+• Core: Fix audio sync breaking when interrupted<br />
+• Qt: Improve FPS timer stability<br />
+• GBA Serialize: Fix loading channel 3 volume (fixes #1107)<br />
+• GBA SIO: Fix unconnected SIOCNT for multi mode (fixes #1105)<br />
+• GBA BIOS: Fix BitUnPack final byte<br />
+• GB I/O: DMA register is R/W<br />
+• GB Video: Fix SCX timing<br />
+• GBA Video: Improve sprite cycle counting (fixes #1126)<br />
+• GB, GBA Savedata: Fix savestate loading overwriting saves on reset<br />
+• GBA Video: Make layer disabling work consistently<br />
+• GB: Fix IRQ disabling on the same T-cycle as an assert<br />
+• Core: Fix ordering events when scheduling during events<br />
+• GBA: Reset WAITCNT properly<br />
+• GBA Serialize: Fix loading states in Hblank<br />
+• PSP2: Fix more issues causing poor audio<br />
+• GBA Memory: Fix Vast Fame support (taizou) (fixes #1170)<br />
+• GB, GBA Savedata: Fix unmasking savedata crash<br />
+• GBA DMA: Fix temporal sorting of DMAs of different priorities<br />
+• FFmpeg: Fix encoding audio/video queue issues<br />
+• GB Serialize: Fix IRQ pending/EI pending confusion<br />
+• GB MBC: Improve multicart detection heuristic (fixes #117)<br />
+• GB Audio: Fix channel 3 reset value<br />
+• GB Audio: Fix channel 4 initial LFSR<br />
+• GB, GBA Video: Don’t call finishFrame twice in thread proxy<br />
+• GB Audio: Fix channel 1, 2 and 4 reset timing<br />
+• Util: Fix wrapping edge cases in RingFIFO<br />
+<br />
+<b>Misc:</b><br />
+• GBA Timer: Use global cycles for timers<br />
+• GBA: Extend oddly-sized ROMs to full address space (fixes #722)<br />
+• All: Make FIXED_ROM_BUFFER an option instead of 3DS-only<br />
+• Qt: Redo GameController into multiple classes<br />
+• Test: Restructure test suite into multiple executables<br />
+• Python: Integrate tests from cinema test suite<br />
+• Util: Don’t build crc32 if the function already exists<br />
+• GBA: Implement display start DMAs<br />
+• Qt: Prevent window from being created off-screen<br />
+• Qt: Add option to disable FPS display<br />
+• GBA: Improve multiboot image detection<br />
+• GB MBC: Remove erroneous bank 0 wrapping<br />
+• GBA Cheats: Allow multiple ROM patches in the same slot<br />
+• GB: Skip BIOS option now works<br />
+• Libretro: Add frameskip option<br />
+• GBA Memory: 64 MiB GBA Video cartridge support<br />
+• PSP2: Use system enter key by default<br />
+• 3DS: Remove deprecated CSND interface<br />
+• Qt: Options to mess around with layer placement<br />
+• GBA Savedata: Remove ability to disable realistic timing<br />
+• Qt: Add load alternate save option<br />
+• GB Audio: Improved audio quality<br />
+• GB, GBA Audio: Increase max audio volume<br />
+• GB: Fix VRAM/palette locking (fixes #1109)<br />
+• GB Video: Darken colors in GBA mode<br />
+• FFmpeg: Support libswresample (fixes #1120, Bug 123)<br />
+• FFmpeg: Support lossless h.264 encoding<br />
+• Feature: Added loading savestates from command line<br />
+• Qt: Allow pausing game at load (fixes #1129)<br />
+• Wii: Move audio handling to callbacks (fixes #803)<br />
+• Qt: Clean up FPS target UI (fixes #436)<br />
+• Core: Remove broken option for whether rewinding restores save games<br />
+• FFmpeg: Support lossless VP9 encoding<br />
+• mGUI: Add fast forward toggle<BR><BR><B>Download: </B><A HREF='mGBA-0.7-b1-win323298.zip?section=tools&amp;ID=1484'>mGBA-0.7-b1-win32.zip</A><BR><BR></TD>
+		</TR>
+		</TABLE>
+		<SMALL>&nbsp;</SMALL><BR><TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>no$gba v2.9a</B></FONT><BR>
+			<FONT SIZE='1'>By <A HREF='developersaaca.php?author=464'>Martin Korth</A> [Saturday July 28th 20:29:20 UTC 2018]</FONT></TD>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>News : General</B></FONT></TD>
+			<TR>
+				<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='indexd84d.html?showinfo=1483'>Permalink</A></TD>
+			</TR>
+		</TR>
+		<TR>
+			<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'>no$gba is a <b>Gameboy Advance / NDS / DSi</b> emulator & debugger for Windows.<br />
+<br />
+The no$gba debugger is a powerful programming tool for professional developers. If you are a developer, please see no$gba homepage for more info:<br />
+<a href="http://problemkaputt.de/gba.htm" target="new">http://problemkaputt.de/gba.htm</a><br />
+<br />
+<b>24 July 2018 - version 2.9a</b><br />
+<i>• emu/dsi/clk: supports ARM9 134MHz mode (but waitstates are too fast for now)<br />
+• bios/help: swi waitbyloop timings for arm7/arm9 rom/cache nds/dsi 67mhz/134mhz<br />
+• cart/emu: supports ds cart reset tricks (via toggling scfg_mc_msb or exmemcnt)<br />
+• dsi/emu/help: scfg_clk.bit7 is read-only on arm9 (value mirrored from arm7)<br />
+• dsi/help: added notes on &#039;flipnote lenny (or whatever it is called)&#039; exploit<br />
+• dsi/help: solved unknown last bytes in boot info block (SHA1 on 60h-byte area)<br />
+• dsi/mmc-image: alternately accepts no$gba-footer at emmc offset FF800h<br />
+• nds/dsi/cart/help: romctrl notes on (in-)official ways to reset cartridges<br />
+• nds/dsi/cart/help: romctrl notes on wrong and slow 1t-rom timings cart header<br />
+• dsi/debug: reformatted scfg7/scfg9 iomap windows, with new scfg details<br />
+• dsi/teak/help: added offical names for bits in ar/arp/stt/mod (from .dll)<br />
+• dsi/teak/help: many new stt/mod/ar/arp/cfgi/a0e/vtr details (thanks wwylele)</i><BR><BR><B>Download: </B><A HREF='http://www.gbadev.org/1'>no$gba29a.zip</A><BR><BR></TD>
+		</TR>
+		</TABLE>
+		<SMALL>&nbsp;</SMALL><BR><TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>no$gba v2.9</B></FONT><BR>
+			<FONT SIZE='1'>By <A HREF='developersaaca.php?author=464'>Martin Korth</A> [Saturday June 16th 01:08:47 UTC 2018]</FONT></TD>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>News : General</B></FONT></TD>
+			<TR>
+				<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='indexea3a.html?showinfo=1482'>Permalink</A></TD>
+			</TR>
+		</TR>
+		<TR>
+			<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'>no$gba is a <b>Gameboy Advance / NDS / DSi</b> emulator & debugger for Windows.<br />
+<br />
+The no$gba debugger is a powerful programming tool for professional developers. If you are a developer, please see no$gba homepage for more info:<br />
+<a href="http://problemkaputt.de/gba.htm" target="new">http://problemkaputt.de/gba.htm</a><br />
+<br />
+<b>14 June 2018 - version 2.9</b><br />
+<i>• webpage: added credit card payment option - plz send money if you like my work<br />
+• dsi/exploit: released unlaunch.dsi (first ever released dsi bootcode exploit)<br />
+• utility/upload: added dslink-compatible wifi upload function (nds/dsi only)<br />
+• utility/upload: wifiboot 2.1 dslink-clone (proper cache init/initback)<br />
+• utility/upload: wifiboot 2.0 dslink-clone (dwm-w024 and arm7i/arm9i areas)<br />
+• dsi/emu/cartloader/help: takes WRAMCNT from MSBs of MBK9 entry in cartheader<br />
+• dsi/emu: mirrors read-only SCFG_EXT7 bits from SCFG_EXT9 and vice-versa<br />
+• arm/cpu/help: notes on cache clean vs invalidate and cache-write-bufferability<br />
+• dsi/help: added caution of forward references in Device List structure<br />
+• dsi/cartloader: rejects large modcrypt areas (eg. crypt.size>arm7i.size)<br />
+• dsi/cartloader: supports small modcrypt areas (eg. crypt.start>arm7i.start)<br />
+• dsi/modcrypt/help: added notes of several weird modcrypt corner cases<br />
+• arm/debug: I/O map cpmem9 shows PU dc/cc/wb (data/code cache and wbufferable)<br />
+• spi/powerman: emulates dslite/dsi registers: powerman[4] and powerman[10h]<br />
+• dsi/korea/help: notes korean font file (diff names, crisp clear, less tiles)<br />
+• dsi/korea/help: korean firmware version numbering as in china, 1.4.6 is newest<br />
+• dsi/help: added note on smaller cert.sys files (for korea or before dsi-shop?)<br />
+• dsi/wifi/emu: emulates sdio cmd5,cmd3,cmd7,cmd15 and reset_control.bit8<br />
+• nds/wifi/help: added description for 48080DAh W_RX_LEN_CROP register<br />
+• dsi/wifi/help: sdio init via cmd5,cmd3,cmd7,cmd15, rtc.fout, scfg/gpio etc<br />
+• dsi/wifi/help: added sdio pins on daughterboard and pinout for ar6013g chip<br />
+• dsi/sdmmc/help: described 40048F6h (bit0 = SD_WRPROTECT_2 for eMMC chip)<br />
+• dsi/scfg/help: details on scfg_ext7 and scfg_a7rom, updated mbk chapter<br />
+• dsi/scfg/emu: emulates scfg_ext7 and scfg_a7rom access right bits<br />
+• dsi/scfg/emu: emulates arm9.mbk1-5 writes in respect to arm7.mbk9 setting<br />
+• dsi/emu: removed most in_32 notyet warnings, added more out_xx notyet warnings<br />
+• dsi/mmc/emu: warning if .mmc file without footer (need CID and Console ID)<br />
+• dsi/help: added notes on bits in SCFG_A9ROM/A7ROM being set-once bits<br />
+• dsi/wifi/help: described 4004C04h.bit8 needed for DWM-W024 in NDS-wifi mode<br />
+• dsi/sdmmc/help: notes on SEND_OP_COND, and on ALL_GET_CID vs max CARD_CLK_CTL<br />
+• dsi/exploits/help: added some notes on recently released exploits and tools<br />
+• dsi/biosdumping/help: notes on voltage errors and CE2 idea from dark_samus<br />
+• dsi/help: added info on valid ARM9+ARM7+ARM9i+ARM7i areas for NDS and DSi mode<br />
+• dsi/help: added info on RSA signatures for newer non-whitelisted NDS carts<br />
+• dsi/carthdr/help: added notes on Access Control entry (request AES keys)<br />
+• dsi/carthdr/help: digest, modcrypt, twl-total can be ZERO (optional entries)<br />
+• dsi/sdmmc: added provisions for SDHC emulation, filesys viewer supports FAT32<br />
+• arm9/emu: allows exception vectors at 00000000h or FFFF0000h (thanks dave)<br />
+• dsi/help: added details on ECC keys/certificates (using ECC curve sect233r1)<br />
+• carthdr/help: added some more cart headers entries for dsi (and nds with rsa)<br />
+• help: specs for DSi RTC extras (up counter, alarm date, and FOUT selection)<br />
+• debug/elf: processes/skips dwarf4/dwarf5 DW_FORM tags (for homebrew PSX games)</i><BR><BR><B>Download: </B><A HREF='http://www.gbadev.org/1'>no$gba29.zip</A><BR><BR></TD>
+		</TR>
+		</TABLE>
+		<SMALL>&nbsp;</SMALL><BR><TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>3D Voxel Space</B></FONT><BR>
+			<FONT SIZE='1'>By <A HREF='developers42b7.html?author=545'>Juan Martinez</A> [Monday June 4th 10:26:33 UTC 2018]</FONT></TD>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>Demos : Tech Demo</B></FONT></TD>
+			<TR>
+				<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='demos8003.html?showinfo=1481'>Permalink</A></TD>
+			</TR>
+		</TR>
+		<TR>
+			<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'><IMG SRC='demos/3D%20Voxel%20Space.png'><BR>
+I made a GBA 3D tech demo for my <a href="http://tragicomedy-hellin.blogspot.com/" target="new">technology blog</a> during my free time.<br />
+<br />
+It was a headache to make it move at 60fps. I finally got it through hardcoded math tables, approximations in the rotation calculations...<br />
+<br />
+I also had to use mode5 (160x128) instead of mode3 (240x160) that uses the original demo in my YouTube video to make it run faster. <br />
+<br />
+Full <b>C</b> sourcecode for <b>devkitARM</b> & binary is included.<br />
+<br />
+<b>Controls:</b><br />
+<b>D-Pad:</b> move<br />
+<b>A:</b> Increase altitude<br />
+<b>B:</b> Decrease altitude<br />
+<b>RT:</b> Turn right<br />
+<b>LT:</b> Turn left<BR><BR><B>Download: </B><A HREF='3D%20Voxel%20Space0cef.zip?section=demos&amp;ID=1481'>3D Voxel Space.zip</A><BR><BR></TD>
+		</TR>
+		</TABLE>
+		<SMALL>&nbsp;</SMALL><BR><TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>VGBA 5.9</B></FONT><BR>
+			<FONT SIZE='1'>By <A HREF='developersb616.html?author=310'>Marat Fayzullin</A> [Thursday May 10th 20:20:04 UTC 2018]</FONT></TD>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>Tools : Emulator</B></FONT></TD>
+			<TR>
+				<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='tools84b4.html?showinfo=1480'>Permalink</A></TD>
+			</TR>
+		</TR>
+		<TR>
+			<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'>As of September 19 2014, <a href="http://fms.komkon.org/VGBA/" target="new">VGBA-Windows</a> <b>is free for everyone to use and share</b>. Have fun, folks!<br />
+<br />
+The latest version, released on <b>May 10 2018</b>, fixes a bug when writing bytes to palette memory, and another bug that occurred when reading words from the BIOS area (something no sensible person should do, but some games have done). I also removed outdated code, rebuilt the program with strict compiler warnings, and fixed them. The VGBA-Android version is also available for your phones, tablets, and TV sets.<br />
+<br />
+If you like <b>VGBA-Windows</b> and want to support its further development, consider downloading <a href="https://market.android.com/details?id=com.fms.emu" target="new">VGBA-Android</a> for your phone or tablet. The Android version comes with many cool extras, such as built-in Cheatopedia with codes for dozens of popular games, State Exchange for exchanging gameplay states with other users, and more. Give it a try and report any encountered problems in the <a href="http://groups.google.com/group/EMUL8/" target="new">discussion</a> group.<br />
+<br />
+The complete list of features and the list of new features and fixes can be found in the <a href="http://fms.komkon.org/VGBA/VGBA.html" target="new">documentation</a>.<br />
+<br />
+<b>What is Virtual GameBoy Advance?</b> <br />
+Virtual GameBoy Advance (VGBA) is a program that emulates Nintendo&#039;s GameBoy Advance on your computer. It runs GameBoy Advance games on PCs, TVs, phones, tabets, or just about any other sufficiently fast gadget. It also helps debugging GameBoy Advance software without using a costly development system. I have previously written another emulator, <a href="http://fms.komkon.org/VGB/" target="new">VGB</a>, that runs older GameBoy and GameBoy Color games. Because GameBoy Advance has completely different hardware, I had to write a new emulator for it, and VGBA runs only GameBoy Advance games. As far as I know, when I released VGBA in 2000, it was the first GameBoy Advance emulator in the world, soon to be joined by other emulators.<br />
+<br />
+You can find the latest version of <b>VGBA</b> here: <a href="http://fms.komkon.org/VGBA/" target="new">http://fms.komkon.org/VGBA/</a><BR><BR><B>Download: </B><A HREF='VGBA59-Windows-bin418b.zip?section=tools&amp;ID=1480'>VGBA59-Windows-bin.zip</A><BR><BR></TD>
+		</TR>
+		</TABLE>
+		<SMALL>&nbsp;</SMALL><BR><TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>Monkey Mayhem Advance</B></FONT><BR>
+			<FONT SIZE='1'>By <A HREF='developers96b7.html?author=544'>Sterophonick</A> [Thursday April 26th 11:55:20 UTC 2018]</FONT></TD>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>Games : Shootem Up</B></FONT></TD>
+			<TR>
+				<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='demosc281.html?showinfo=1479'>Permalink</A></TD>
+			</TR>
+		</TR>
+		<TR>
+			<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'><IMG SRC='demos/Monkey%20Mayhem%20Advance.png'><BR>
+I have a very simple game called <b>Monkey Mayhem Advance</b>.<br />
+It&#039;s a game where you are a monkey and you have to shoot down as many Starfish as possible with the bananas you are provided.<br />
+<br />
+<b>Original Game:</b> <a href="https://scratch.mit.edu/projects/25786201/" target="new">https://scratch.mit.edu/projects/25786201/</a><br />
+<b>Source:</b> <a href="https://github.com/Sterophonick/Monkey-Mayhem-Advance" target="new">https://github.com/Sterophonick/Monkey-Mayhem-Advance</a><br />
+<br />
+This game does not use <b>HeartLib</b>.<BR><BR><B>Download: </B><A HREF='Monkey%20Mayhem%20Advance3839.zip?section=demos&amp;ID=1479'>Monkey Mayhem Advance.zip</A><BR><BR></TD>
+		</TR>
+		</TABLE>
+		<SMALL>&nbsp;</SMALL><BR><TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>Misfortune Advance V1.00A</B></FONT><BR>
+			<FONT SIZE='1'>By <A HREF='developers96b7.html?author=544'>Sterophonick</A> [Thursday April 26th 11:35:18 UTC 2018]</FONT></TD>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>Games : RPG</B></FONT></TD>
+			<TR>
+				<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='demos7258.html?showinfo=1478'>Permalink</A></TD>
+			</TR>
+		</TR>
+		<TR>
+			<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'><IMG SRC='demos/Misfortune%20Advance.png'><BR>
+Hello, all of you GBA Developers!<br />
+I am really glad to see people still interested in a great handheld console.<br />
+Today I have a game called <b>Misfortune Advance</b>.<br />
+<br />
+To be clear, it&#039;s a demake of a Gaming Creepypasta (called Misfortune.gb) about a creepy hidden game in many Cartridges on the 1989 Game Boy.<br />
+<br />
+The game got a PC Port in 2013, and it was really good.<br />
+I was digging for a handheld ROM of the game and found nothing, which sucks because I like this game. So, I decided to make my own version on the Game Boy Advance.<br />
+This version is an adaptation of the PC Remake.<br />
+This game is fully tested and works on hardware.<br />
+<br />
+<b>Changes:</b><br />
+- Now uses HeartLib<br />
+- Add several missing sound effects<br />
+- Option to exit to Flashcart menu (to my knowledge only works on EZ4)<br />
+- Several bugfixes<br />
+- Fixed a few typos.<br />
+<br />
+Written in C (using MS Visual Studio 2017), compiled with DevKitARM<br />
+<br />
+<b>Code:</b> Sterophonick<br />
+<b>Resources (Text, Textures, Maps):</b> <a href="http://misfortune-dot-gb.webs.com/" target="new">http://misfortune-dot-gb.webs.com/</a><br />
+Devillion<br />
+CreepyPasta Wiki<br />
+<br />
+<b>Source:</b> <a href="https://github.com/Sterophonick/Misfortune-Advance" target="new">https://github.com/Sterophonick/Misfortune-Advance</a><BR><BR><B>Download: </B><A HREF='Misfortune%20Advancec44d.zip?section=demos&amp;ID=1478'>Misfortune Advance.zip</A><BR><BR></TD>
+		</TR>
+		</TABLE>
+		<SMALL>&nbsp;</SMALL><BR><TABLE WIDTH='600' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+		<TR>
+			<TD ROWSPAN='2' ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+			<FONT FACE='verdana' SIZE='2'><B>Super Block Jump V1.13A</B></FONT><BR>
+			<FONT SIZE='1'>By <A HREF='developers96b7.html?author=544'>Sterophonick</A> [Sunday April 22nd 01:27:06 UTC 2018]</FONT></TD>
+			<TD ALIGN='RIGHT' BGCOLOR='#0099FF'><FONT FACE='verdana' SIZE='2'><B>Games : Platform</B></FONT></TD>
+			<TR>
+				<TD ALIGN='RIGHT' BGCOLOR='#0099FF' STYLE='BORDER-BOTTOM: 1px solid black;'><A HREF='demos1e90.html?showinfo=1477'>Permalink</A></TD>
+			</TR>
+		</TR>
+		<TR>
+			<TD COLSPAN='2' ALIGN='left' BGCOLOR='#CDCDCD'>
+			<FONT FACE='verdana' SIZE='2'><IMG SRC='demos/Super%20Block%20Jump.png'><BR>
+<b>Sterophonick</b> has been working on his new game for almost two years now, and he has finally finished it! <b>Super Block Jump</b> is a platforming game where you move a block and take it to the goal.<br />
+<br />
+<b>Changes:</b><br />
+- Made it a bit more obvious when you get an achievement.<br />
+- A bar appears at the top of the screen detailing the name, and how you got it.<br />
+- Makes it more accurate compared to the Scratch version.<br />
+<br />
+Written in C with <b>HeartLib</b>, compiled with <b>DevKitARM</b>.<br />
+<br />
+<b>Source:</b> <a href="https://github.com/Sterophonick/SuperBlockJumpGBA" target="new">https://github.com/Sterophonick/SuperBlockJumpGBA</a><br />
+<b>HeartLib:</b> <a href="https://github.com/Sterophonick/HeartLib" target="new">https://github.com/Sterophonick/HeartLib</a><br />
+<b>Original Game</b>: <a href="https://scratch.mit.edu/projects/33047346/" target="new">https://scratch.mit.edu/projects/33047346/</a><BR><BR><B>Download: </B><A HREF='Super%20Block%20Jump15e8.zip?section=demos&amp;ID=1477'>Super Block Jump.zip</A><BR><BR></TD>
+		</TR>
+		</TABLE>
+		<SMALL>&nbsp;</SMALL><BR>
+5983951</TD>
+<TD VALIGN='TOP' WIDTH='190' BGCOLOR='#FFFFFF'>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Games</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/2004Mbit_logo.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosff89.html?showinfo=1271'>2004Mbit Compo Game</A><BR>2. <A HREF='demos8c1f.html?showinfo=434'>Xmen V StreetFighter J Edition</A><BR>3. <A HREF='demosb964.html?showinfo=1279'>Another World GBA v2.1</A><BR>4. <A HREF='demos34fb.html?showinfo=1353'>MarioBreak!</A><BR>5. <A HREF='demos1485.html?showinfo=1354'>FF4 Advance- The Return of Golbez</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Top Demos</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+<IMG SRC='demos/SmashBrosAdvance.png' WIDTH='184' HEIGHT='123' ALT=''><BR>1. <A HREF='demosf3bc.html?showinfo=1275'>Smash Bros. Advance</A><BR>2. <A HREF='demos4f79.html?showinfo=472'>Half Life</A><BR>3. <A HREF='demos7150.html?showinfo=1332'>Jespa3D Engine ver 1.39</A><BR>4. <A HREF='demos9e74.html?showinfo=1276'>BulletGBA 5.0</A><BR>5. <A HREF='demos628a.html?showinfo=1329'>Final Fantasy 4th World Cup won by Italy</A><BR></FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Search</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='CENTER' VALIGN='CENTER' BGCOLOR='#CDCDCD'>
+	<FORM METHOD='POST' ACTION='http://gbadev.org/search.php'>
+	<INPUT TYPE='hidden' NAME='search_section' VALUE='All'>
+	<INPUT TYPE='text' NAME='search_input' MAXLENGTH='30' SIZE='14'>
+	<INPUT TYPE='submit' VALUE='Search'></FORM>
+	</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>GBADEV.ORG Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+
+
+<B>Visitors:</B><BR>
+<B>Days Online:</B> 6784<BR>
+
+<B>Articles:</B> 550<BR><B>Games:</B> 388<BR><B>Demos:</B> 237<BR><B>Tools:</B> 176<BR>
+</FONT></TD>
+</TR>
+</TABLE>	<br>
+	<TABLE WIDTH='190' STYLE='BORDER: 1px solid black;' CELLSPACING='0' CELLPADDING='2'>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#0099FF' STYLE='BORDER-RIGHT: hidden; BORDER-BOTTOM: 1px solid black; BORDER-LEFT: hidden;'>
+	<FONT FACE='verdana' SIZE='2'><B>Forum Stats</B></FONT><BR></TD>
+</TR>
+<TR>
+	<TD ALIGN='LEFT' BGCOLOR='#CDCDCD'>
+<B>Top Posters:</B><BR>
+
+1. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=180'>tepples</A> (12198)<BR>2. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=146'>sgeos</A> (2421)<BR>3. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=5846'>HyperHacker</A> (2404)<BR>4. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=1120'>sajiimori</A> (2226)<BR>5. <A HREF='http://forum.gbadev.org/profile.php?mode=viewprofile&amp;u=2686'>keldon</A> (2158)<BR><BR><B>Members:</B> 11811<BR><B>Articles:</B> 175447<BR>
+</FONT></TD>
+</TR>
+</TABLE></TD>
+</TR>
+</TABLE>
+</FONT>
+</BODY>
+
+<!-- Mirrored from gbadev.org/index.php?ID=30 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 23:07:18 GMT -->
+</HTML>
